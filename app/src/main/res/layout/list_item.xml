@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:padding="4dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+>
+
+
+    <ImageView
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:id="@+id/planet_photo"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/planet_photo"
+            android:layout_alignTop="@+id/planet_photo"
+            android:layout_toRightOf="@+id/planet_photo"
+            android:layout_toEndOf="@+id/planet_photo">
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:textSize="@dimen/medium_text_size"
+                android:textColor="@color/black"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Large Text"
+                android:id="@+id/planet_name"
+                android:layout_weight="0.5"
+                android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

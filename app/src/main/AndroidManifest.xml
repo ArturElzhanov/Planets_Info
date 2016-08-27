@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="elzhanov.planets_info">
+
+    <application
+            android:allowBackup="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".EarthActivity">
+
+        </activity>
+        <activity android:name=".JupiterActivity">
+
+        </activity>
+        <activity android:name=".PlutoActivity">
+
+        </activity>
+        <activity android:name=".SaturnActivity">
+
+        </activity>
+        <activity android:name=".UranusActivity">
+
+        </activity>
+        <activity android:name=".VenusActivity">
+
+        </activity>
+        <activity android:name=".MarsActivity">
+
+        </activity>
+        <activity android:name=".NeptuneActivity">
+
+        </activity>
+        <activity android:name=".MercuryActivity">
+
+        </activity>
+    </application>
+
+</manifest>
