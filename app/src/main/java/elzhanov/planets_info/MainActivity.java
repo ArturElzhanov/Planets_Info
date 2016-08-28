@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -24,10 +23,7 @@ public class MainActivity extends AppCompatActivity {
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                for (int j = 0; j <planets.size() ; j++) {
-                    createIntent(i,PlanetsActivity.class);
-                    break;
-                }
+                createIntent(i,PlanetsActivity.class);
             }
         });
     }
