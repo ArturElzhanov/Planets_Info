@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        ui();
+        uiCreate();
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    private void ui() {
+    private void uiCreate() {
         lv = (ListView) findViewById(R.id.lv);
         listAdapter = new CustomAdapter(loadData());
         lv.setAdapter(listAdapter);

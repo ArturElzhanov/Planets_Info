@@ -20,6 +20,10 @@ public class PlanetsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_planets);
 
+        infoVeiwCreate();
+    }
+
+    private void infoVeiwCreate() {
         txt_1 = (TextView)findViewById(R.id.textView);
         img_1 = (ImageView)findViewById(R.id.imageView);
         txt_2 = (TextView)findViewById(R.id.textView2);
