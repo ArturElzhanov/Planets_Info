@@ -10,7 +10,7 @@ import android.widget.TextView;
 /**
  * Created by User on 26.08.2016.
  */
-public class JupiterActivity extends AppCompatActivity {
+public class PlanetsActivity extends AppCompatActivity {
     TextView txt_1;
     ImageView img_1;
     TextView txt_2;

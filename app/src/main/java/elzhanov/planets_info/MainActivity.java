@@ -20,44 +20,22 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        lv = (ListView) findViewById(R.id.lv);
-        listAdapter = new CustomAdapter(loadData());
-        lv.setAdapter(listAdapter);
+        ui();
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                switch (i){
-                    case 0:
-                        createIntent(i,MercuryActivity.class);
-                        break;
-                    case 1:
-                        createIntent(i,VenusActivity.class);
-                        break;
-                    case 2:
-                        createIntent(i,EarthActivity.class);
-                        break;
-                    case 3:
-                        createIntent(i,MarsActivity.class);
-                        break;
-                    case 4:
-                        createIntent(i,JupiterActivity.class);
-                        break;
-                    case 5:
-                        createIntent(i,SaturnActivity.class);
-                        break;
-                    case 6:
-                        createIntent(i,UranusActivity.class);
-                        break;
-                    case 7:
-                        createIntent(i,NeptuneActivity.class);
-                        break;
-                    case 8:
-                        createIntent(i,PlutoActivity.class);
-                        break;
+                for (int j = 0; j <planets.size() ; j++) {
+                    createIntent(i,PlanetsActivity.class);
+                    break;
                 }
             }
         });
+    }
+
+    private void ui() {
+        lv = (ListView) findViewById(R.id.lv);
+        listAdapter = new CustomAdapter(loadData());
+        lv.setAdapter(listAdapter);
     }
 
     private void createIntent(int i, Class<?> cls) {

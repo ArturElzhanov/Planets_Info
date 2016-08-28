@@ -15,31 +15,7 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".EarthActivity">
-
-        </activity>
-        <activity android:name=".JupiterActivity">
-
-        </activity>
-        <activity android:name=".PlutoActivity">
-
-        </activity>
-        <activity android:name=".SaturnActivity">
-
-        </activity>
-        <activity android:name=".UranusActivity">
-
-        </activity>
-        <activity android:name=".VenusActivity">
-
-        </activity>
-        <activity android:name=".MarsActivity">
-
-        </activity>
-        <activity android:name=".NeptuneActivity">
-
-        </activity>
-        <activity android:name=".MercuryActivity">
+        <activity android:name=".PlanetsActivity">
 
         </activity>
     </application>
